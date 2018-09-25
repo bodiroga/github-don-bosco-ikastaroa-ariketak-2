@@ -1,5 +1,7 @@
 void setups() {
-  pinMode(LED_BUILTIN, INPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
+  Serial.begin(9600);
+  Serial.print("Hurrengoan akats bat bakarrik jarri beharrean MILA jarri :D  ");
 }
 
 void loop() {
