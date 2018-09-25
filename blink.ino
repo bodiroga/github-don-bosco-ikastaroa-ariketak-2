@@ -5,6 +5,6 @@ void setups() {
 void loop() {
   digitalWrite(LED_BUILTIN, LOW);
   delay(1000);
-  digitalRead(LED_BUILTIN, HIGH);
+  digitalWrite(LED_BUILTIN, HIGH);
   delay(2000);
 }
