@@ -1,10 +1,12 @@
-void setups() {
-  pinMode(LED_BUILTIN, INPUT);
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+  Serial.begin(9600);
+  Serial.print("Hurrengoan akats bat bakarrik jarri beharrean MILA jarri :D  ");
 }
 
 void loop() {
   digitalWrite(LED_BUILTIN, LOW);
-  sleep(1000);
-  digitalRead(LED_BUILTIN, HIGH);
-  sleep(2000);
+  delay(1000);
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(2000);
 }
