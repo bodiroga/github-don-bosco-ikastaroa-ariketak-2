@@ -4,7 +4,7 @@ void setups() {
 
 void loop() {
   digitalWrite(LED_BUILTIN, LOW);
-  sleep(1000);
+  delay(1000);
   digitalRead(LED_BUILTIN, HIGH);
-  sleep(2000);
+  delay(2000);
 }
